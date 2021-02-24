@@ -1,5 +1,5 @@
-bonjour
-====
+# bonjour
+
 
 This is a simple Multicast DNS-SD (Apple Bonjour) library written in Golang. You can use it to discover services in the LAN. Pay attention to the infrastructure you are planning to use it (clouds or shared infrastructures usually prevent mDNS from functioning). But it should work in the most office, home and private environments.
 
@@ -8,11 +8,11 @@ This is a simple Multicast DNS-SD (Apple Bonjour) library written in Golang. You
 Detailed documentation: [![GoDoc](https://godoc.org/github.com/oleksandr/bonjour?status.svg)](https://godoc.org/github.com/oleksandr/bonjour)
 
 
-##Browsing available services in your local network
+## Browsing available services in your local network
 
 Here is an example how to browse services by their type:
 
-```
+```go
 package main
 
 import (
@@ -50,11 +50,11 @@ func main() {
 }
 ```
 
-##Doing a lookup of a specific service instance
+## Doing a lookup of a specific service instance
 
 Here is an example of looking up service by service instance name:
 
-```
+```go
 package main
 
 import (
@@ -93,11 +93,11 @@ func main() {
 ```
 
 
-##Registering a service
+## Registering a service
 
 Registering a service is as simple as the following:
 
-```
+```go
 package main
 
 import (
@@ -130,9 +130,9 @@ func main() {
 ```
 
 
-##Registering a service proxy (manually specifying host/ip and avoiding lookups)
+## Registering a service proxy (manually specifying host/ip and avoiding lookups)
 
-```
+```go
 package main
 
 import (
